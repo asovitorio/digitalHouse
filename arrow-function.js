@@ -12,3 +12,4 @@ return data.getHours() + ":" + data.getMinutes();
 console.log(somar(2,3));
 console.log(dobro(2,3));
 console.log(horaAtual);
+// git teste ALessandro
