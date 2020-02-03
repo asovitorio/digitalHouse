@@ -80,3 +80,6 @@ function processar(url,callback){
 } 
 
 console.log(processar(['ale','ononeia', 'mica'],adicionarHttp))
+//ALessandro
+
+var teste;
