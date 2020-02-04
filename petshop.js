@@ -6,15 +6,17 @@ json = `[{"nome":"Repete Pet",
 "sexo":"Macho",
 "dono":{"nome":"vinicius","idade":25},
 "vacinado":false,
+"castrado":false,
 "servicos":["Banho","Tosa"]},
 {"nome":"Menina",
 "raca":"Vira-Lata",
 "dataNascimento":"2016-01-14T16:30:22Z",
 "tipo":"cachorro",
 "sexo":"Fêmea",
-"peso":3.5,
+"peso":2,
 "dono":{"nome":"João","idade":25},
 "vacinado":true,
+"castrado":false,
 "servicos":["Banho","Tosa"]}] `;
 
 //Padrão de string de data para json: AAAA-MM-DDTHH:mm:SSZ
@@ -23,9 +25,8 @@ const lerPets = (umJSON) => {
 
   const pets = JSON.parse(umJSON);
    
-  pets.map(function(lista){
-
-    lista.dataNascimento = new Date(lista.dataNascimento);
+  pets.map(function(pet){
+    pet.dataNascimento = new Date(pet.dataNascimento);
   })
     
    return pets;
@@ -33,10 +34,27 @@ const lerPets = (umJSON) => {
   
 };
 
- console.log(lerPets(json));
-  let vetor = [1,2,3]
- const a = (num) =>Math.pow(num,2);
- console.log(vetor.map(a));
+let pets = lerPets(json);
+  
+
+let buscaPeloNome = (trecho, pets) =>{
+  let resultado = pets.filter(
+    pet => {
+      return pet.nome.indexOf(trecho) != -1;
+    });
+    return resultado;
+};
+
+ console.log(buscaPeloNome("Me",pets));
+
+ //verifica se o pet já foi castrado
+//caso já tenha sido retorna uma mensagem de erro
+//caso não tinha sido, muda parâmetro pet.castrado
+//para true e adiciona a string "castrado" ao array
+//serviços
+ const castarPet = pet => {}
+
+
 
 // const vacinarPet = function(pet){
 //     if(!pet.vacinado){
