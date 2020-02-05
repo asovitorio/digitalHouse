@@ -26,4 +26,4 @@ function substituicaoRapida(texto,palavra,substituicao){
        console.log(menciona("Existem muitas linguagens de programação e javascript é uma delas","programaçãdddddo"));
        let nomeUsuario = "Olá, sou Carlos!".slice(9,15);
        console.log(nomeUsuario);
-	   //ytehdfgjfhg
+	   //erick pietro
