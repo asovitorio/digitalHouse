@@ -1,0 +1,17 @@
+ls: Lista arquivos e pasta
+touch: cria arquivo
+> : direcionador de saida
+rm: apaga arquivos 
+rm -r remove pasta e seu conteudo
+Wild Cards
+*substitui uma string
+mv: move ou renomeia
+
+https://lanching.js.orgearngitbr/
+Repositório
+
+commit - marcar o momento da versão
+
+branches - Ramificação
+
+
