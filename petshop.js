@@ -52,7 +52,7 @@ let buscaPeloNome = (trecho, pets) =>{
 //caso não tinha sido, muda parâmetro pet.castrado
 //para true e adiciona a string "castrado" ao array
 //serviços
- const castarPet = pet => {}
+ const castaPet = pet => {}
 
 
 
