@@ -53,7 +53,8 @@ nav ul li a {
 nav ul li a:hover {
     background-color: yellow;
     border: 1px solid olive;
-    border-radius: 30px;
+    border-radius: 6px;
+    color: orangered;
 }
 nav ul {
     list-style: none;
