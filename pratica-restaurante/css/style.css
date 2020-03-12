@@ -50,12 +50,15 @@ nav ul li a {
     color: #4a4a4a;
 
 }
+
 nav ul li a:hover {
     background-color: yellow;
     border: 1px solid olive;
     border-radius: 6px;
     color: orangered;
 }
+
+
 nav ul {
     list-style: none;
     line-height: 30px;
@@ -107,19 +110,21 @@ section {
 h3 {
     margin: 10px;
 }
-h4{
+
+h4 {
     margin-bottom: 1px;
 }
 
-footer ul{
+footer ul {
     float: right;
     list-style: none;
     margin-top: 40px;
-   
+
 }
-footer ul li a{
+
+footer ul li a {
     color: white;
-    font-weight: bold; 
+    font-weight: bold;
     text-decoration: none;
     line-height: 30px;
 }
