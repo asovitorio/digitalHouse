@@ -24,14 +24,21 @@
 
   table {
     background-color: rgba(255, 255, 255, 0.774);
+    margin-top: 10px;
   }
 
   body {
     background-image: url('../images/img-body-lista-produto.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 10px;
   }
-
+thead{
+  background-color: rgba(17, 170, 231, 0.692);
+}
+tbody{
+  overflow-y: scroll;
+}
   td {
     font-size: 20px;
 
@@ -97,13 +104,21 @@
     /* right: 154px;
     bottom: 17px; */
   }
+  h1{
+      background-color:rgba(17, 170, 231, 0.692);
+      display: inline;
+     border-radius: 5px;
+      color: white;
+      text-shadow:1px 0px 8px black;
+     
+    }
 </style>
-</head>
+
 
 <body>
   <div class="container">
     <h1><%= titulo %> </h1>
-    <table class=" table table-striped">
+    <table  class=" table table-striped table-fixed">
 
       <thead>
 
@@ -152,7 +167,7 @@
 
   </div>
 
-
+  
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
