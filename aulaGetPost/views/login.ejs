@@ -53,10 +53,11 @@
             color: white;
             text-shadow: 1px 0px 8px black;
             background-color: rgba(17, 170, 231, 0.692);
-            
+
 
         }
-        input{
+
+        input {
             margin-bottom: 20px;
         }
 
@@ -136,108 +137,108 @@
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
         }
-        .container{
-           display: flex ;
-          justify-content: center;
-         margin-top: 90px;
-         
-         width: 90%;
-         border-radius: 20px;
-        
 
-         
-           
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 90px;
+
+            width: 90%;
+            border-radius: 20px;
+
+
+
+
         }
-        #corpo-form{
-           display: flex;
+
+        #corpo-form {
+            display: flex;
             width: 100%;
             margin: 0px auto;
             margin: 10px;
             padding: 10px;
             justify-content: center;
-           
-         
-        }
-        form{
-            border-bottom: 2px solid rgba(17, 170, 231, 0.692);
-            border-right: 2px solid rgba(17, 170, 231, 0.692); 
-            border-left: 2px solid rgba(17, 170, 231, 0.692); 
-            background-color: rgba(0, 0, 0, 0.527);
-            box-shadow: 0px 0px 9px black ;
-            border-radius: 20px;
-            
-            
+
+
         }
 
-        .form-row{
+        form {
+            border-bottom: 2px solid rgba(17, 170, 231, 0.692);
+            border-right: 2px solid rgba(17, 170, 231, 0.692);
+            border-left: 2px solid rgba(17, 170, 231, 0.692);
+            background-color: rgba(0, 0, 0, 0.527);
+            box-shadow: 0px 0px 9px black;
+            border-radius: 20px;
+
+
+        }
+
+        .form-row {
             margin: 10px;
         }
-        a{display: inline-block;
-           
+
+        a {
+            display: inline-block;
+
         }
 
-        #submit-panel{
-           
+        #submit-panel {
+
             width: 100%;
             /* display: inline-flex;
             justify-content: center;
            align-items: center; */
-         
+
         }
-        #submit-panel a{
-         color: rgba(255, 255, 255, 0.897);
-         
-          display: inline-block;
-          width: 50%;
-          text-align: right;
-          
+
+        #submit-panel a {
+            color: rgba(255, 255, 255, 0.897);
+
+            display: inline-block;
+            width: 50%;
+            text-align: right;
+
         }
     </style>
 
 </head>
 
 <body>
-   
-    
     <div class="container">
-        
         <div id="corpo-form">
-      
-        <form class="needs-validation" method="POST" action="login" novalidate>
-            <h1><%= titulo %> </h1>
-            <div class="form-row">
-                <div class="col-md-12 mb-12">
-                    <label for="validationCustomUsername">Email</label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroupPrepend">@</span>
-                        </div>
-                        <input type="email" class="form-control" name="email" id="validationCustomUsername" placeholder="Email"
-                            aria-describedby="inputGroupPrepend" required>
-                        <div class="invalid-feedback">
-                            Esqueceu o email.
+            <form class="needs-validation" method="POST" action="login" novalidate>
+                <h1><%= titulo %> </h1>
+                <div class="form-row">
+                    <div class="col-md-12 mb-12">
+                        <label for="validationCustomUsername">Email</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            </div>
+                            <input type="email" class="form-control" name="email" id="validationCustomUsername"
+                                placeholder="Email" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                                Esqueceu o email.
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="col-md-12 mb-12">
-                    <label for="validationCustom03">Senha</label>
+                <div class="form-row">
+                    <div class="col-md-12 mb-12">
+                        <label for="validationCustom03">Senha</label>
 
-                    <input type="password" class="form-control" name="senha" id="validationCustom03" placeholder="Senha" required>
-                    <div class="invalid-feedback">
-                        Esqueceu a senha
+                        <input type="password" class="form-control" name="senha" id="validationCustom03"
+                            placeholder="Senha" required>
+                        <div class="invalid-feedback">
+                            Esqueceu a senha
+                        </div>
                     </div>
+                    <div id="submit-panel">
+                        <button class="btn btn-primary" type="submit">Entrar</button>
+                        <a href="cadastrar">Já tem Cadastro?</a></div>
                 </div>
-                <div id="submit-panel"> 
-                     <button class="btn btn-primary" type="submit">Entrar</button>
-                    <a href="cadastrar">Já tem Cadastro?</a></div>
-               
-            </div>
-           
-            
-        </form>
-    </div>
+            </form>
+        </div>
         <script>
             // Example starter JavaScript for disabling form submissions if there are invalid fields
             (function () {

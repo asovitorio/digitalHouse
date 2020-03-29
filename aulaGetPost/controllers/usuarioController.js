@@ -24,18 +24,26 @@ const usuarioController = {
       let {
          nome,
          email,
-         senha
+         senha,
+
       } = req.body;
+      let {
+         files
+      } = req;
       let senhaC = bcrypt.hashSync(senha, 10);
-
-
+      console.log(req.body);
+      console.log(req);
       let usuario = {
          nome: nome,
          email: email,
-         senha: senhaC
+         senha: senhaC,
+         foto: files[0].originalname
       };
-
-      fs.writeFileSync(usuariosJson, JSON.stringify(usuario));
+      let listaUsusario = JSON.parse(fs.readFileSync(usuariosJson, {
+         encoding: 'utf-8'
+      }));
+      listaUsusario.push(usuario);
+      fs.writeFileSync(usuariosJson, JSON.stringify(listaUsusario));
       res.render('login', {
          titulo: "login"
       });
@@ -56,15 +64,26 @@ const usuarioController = {
          encoding: 'utf-8'
       });
       user = JSON.parse(usuarioSalvo);
-      if (email == user.email && bcrypt.compareSync(senha, user.senha) == true) {
-         return res.render('listaUsuario', {
-            usuarios: user,
-            titulo: "Lista de usuarios"
-         });
-         //return res.send(user);
-      } else {
-         return res.send("usuario ou senha invalido");
+      let cont = 0;
+      let logar = false
+
+      let logando = () => {
+         for (let usuario of user) {
+            if (email == usuario.email && bcrypt.compareSync(senha, usuario.senha) == true) {
+               return res.render('listaUsuario', {
+                  usuarios: user,
+                  titulo: "Lista de usuarios"
+               });
+
+            }
+         }
+         return false;
       }
+
+      console.log(logando());
+
+
+
 
    }
 

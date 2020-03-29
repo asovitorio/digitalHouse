@@ -133,7 +133,7 @@
     <br>
     <div class="container">
       <h1><%= titulo %> </h1>
-      <form action="cadastrar" method="POST" class="needs-validation" novalidate>
+      <form action="cadastrar" method="POST" class="needs-validation" enctype="multipart/form-data" novalidate>
         <div class="form-row">
           <div class="col-md-12 mb-12">
             <label for="validationCustom01">Nome</label>
@@ -167,6 +167,8 @@
             </div>
           </div>
         </div>
+      
+       <input name="foto" type="file" id="foto" ><br><br>
 
         <button class="btn btn-primary" type="submit">Salvar</button>
       </form>

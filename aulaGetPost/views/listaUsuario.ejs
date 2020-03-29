@@ -13,40 +13,63 @@
 </head>
 <title><%= titulo %></title>
 <style>
-  
   body {
     background-image: url('/images/lista.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 10px;
-  }
+    margin: 0px auto;
   
+  }
+
   h1 {
     background-color: rgba(17, 170, 231, 0.692);
     display: inline-block;
     border-radius: 5px;
     color: white;
     text-shadow: 1px 0px 8px black;
-   
+
   }
- 
+
+  img.card-img-top {
+    height: 200px;
+  }
+  div.row{
+    
+    padding-right: 20px;
+  }
+  .col-sm-4{
+    margin-bottom: 20px;
+  }
 </style>
 
 
 <body>
   <br>
-  <div class="container">
-    <h1><%=titulo%></h1>
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="..." alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title"><%=usuarios.nome%></h5>
-        <p class="card-text">Email: <%=usuarios.email%></p>
-        <p id="senha" class="card-text"> <%="Senha:" + usuarios.senha%></p>
-        <a href="#" class="btn btn-primary">Editar</a>
+
+<div class="container">
+  <h1><%=titulo%></h1>
+    <div class="row">
+     
+    <% usuarios.forEach(element => {
+      
+   %>
+   
+      <div class="col-sm-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/<%=element.foto%>" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><%=element.nome%></h5>
+            <p class="card-text">Email: <%=element.email%></p>
+            <p id="senha" class="card-text"> <%="Senha:" + element.senha%></p>
+            <a href="#" class="btn btn-primary">Editar</a>
+          </div>
+        </div>
       </div>
-    </div>
+  
+    <%});%>
   </div>
+</div>
 
 
   <!-- Optional JavaScript -->

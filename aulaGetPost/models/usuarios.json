@@ -1,1 +1,32 @@
-{"nome":"ALESSANDRO BARBOSA VITORIO 123","email":"sandro@sandro","senha":"$2b$10$spKlY6DnWP1smncevy0ob.ezi.xEPwJxu7G52dP9MZoVBuxT.zeFu"}
+[
+    {
+        "nome": "Alessandro Barbosa Vitorio",
+        "email": "asovitorio@gmail.com",
+        "senha": "$2b$10$xq3368fBcSDxpSxdU5AO1OYSCfULgY4k9UHpRP8AfgxAFA83A5bky",
+        "foto": "IMG_20180411_111301015~3.jpg"
+    },
+    {
+        "nome": "Sandra Gomes F. Vitorio",
+        "email": "sandrillisol@gmail.com",
+        "senha": "$2b$10$jbeIuKiBUtEps92SIdpsAuFIjbCxIkln05f7cdz1infTHxo0k96IG",
+        "foto": "pp.jpg"
+    },
+    {
+        "nome": "Mikalateia",
+        "email": "mika@mika",
+        "senha": "$2b$10$mJxpkBtfTcy6lkvJMLOkFeWHHtj4lXpOr5dk7BaxMYkrW6ErUc/dq",
+        "foto": "ScreenHunter 01.png"
+    },
+    {
+        "nome": "Ononéia Fernandes Vitorio",
+        "email": "ononeia@gmai.com",
+        "senha": "$2b$10$7Xz0mTdGNi2Wt1LzbHBYEe46pXdU7brUMcX4IMTuuJIsU/3hMpfNS",
+        "foto": "ononeia.jpg"
+    },
+    {
+        "nome": "Amora Fernandes Vitorio",
+        "email": "amora@gmail.com",
+        "senha": "$2b$10$Rhfnv3f1Z8/wcQTwN6lQj.3FyRGx07xM6zmRpcXPPtk1RZbgcbP4y",
+        "foto": "amora.jpg"
+    }
+]
