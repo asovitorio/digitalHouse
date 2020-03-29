@@ -7,6 +7,7 @@ var methodOverride = require('method-override');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var produtoRouter = require('./routes/produtoRoute');
+var usuarioRouter = require('./routes/usuarioRouter');
 var app = express();
 
 // view engine setup
@@ -22,6 +23,7 @@ app.use(methodOverride('_method'))
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/produto',produtoRouter);
+app.use('/usuario',usuarioRouter);
 app.use((req,res)=>{
   return res.status(404).render('not-found');
 });
